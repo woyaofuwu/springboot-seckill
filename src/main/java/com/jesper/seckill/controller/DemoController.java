@@ -25,6 +25,12 @@ public class DemoController {
     @Autowired
     MQSender sender;
 
+    @RequestMapping("/h")
+    @ResponseBody
+    public String thymeleaf( ) {
+       
+        return "hello";
+    }
 //    @RequestMapping("/mq")
 //    @ResponseBody
 //    public Result<String> mq() {
